@@ -17,7 +17,7 @@
     margin: auto 30px;
     background: #00bd7a;
     border: 4px solid #00bd7a;
-    font: normal normal bold 20px/25px Poppins;
+    font: normal normal bold 20px/25px Montserrat;
     cursor: pointer;
     box-shadow: 0 0 5px #00bd7a;
     outline: none;
@@ -62,13 +62,13 @@
 
 .information {
     padding: 0 40px;
-    font: normal normal normal 16px/25px Poppins;
+    font: normal normal normal 16px/25px Montserrat;
     color: #F1F1F1;
 }
 
 .title-settings {
     text-align: center;
-    font: normal normal bold 20px/25px Poppins;
+    font: normal normal bold 20px/25px Montserrat;
     color: #F1F1F1;
     margin: 2% 0;
 }
@@ -107,7 +107,7 @@
     height: 10%;
     border: none;
     border-radius: 15px;
-    font: normal normal bold 30px/40px Poppins;
+    font: normal normal bold 30px/40px Montserrat;
     color: #D1D1D1;
     background-color: #303030;
     box-shadow: 1px 2px 5px #585858;
@@ -125,7 +125,7 @@
     background: #00bd7a;
     box-shadow: 0 0 5px #006e47;
     border: 4px solid #00bd7a;
-    font: normal normal bold 30px/40px Poppins;
+    font: normal normal bold 30px/40px Montserrat;
     width: 500px;
     height: 100px;
     margin: 1% 2%;
@@ -150,7 +150,7 @@
 .account-name {
     margin: 0 100px;
     margin-top: 15px;
-    font: normal normal bold 24px/35px Poppins;
+    font: normal normal bold 24px/35px Montserrat;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -160,7 +160,7 @@
 
 .account-uuid {
     margin: 0 100px;
-    font: normal normal normal 18px/27px Poppins;
+    font: normal normal normal 18px/27px Montserrat;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -248,7 +248,7 @@
 .slider-touch-right span:after {
     content: attr(value);
     color: #00bd7a;
-    font: normal normal bold 12px/18px Poppins;
+    font: normal normal bold 12px/18px Montserrat;
     white-space: nowrap;
     pointer-events: none;
     position: absolute;
@@ -282,13 +282,13 @@
 .ram-info {
     display: flex;
     align-items: center;
-    font: normal normal bold 15px/25px Poppins;
+    font: normal normal bold 15px/25px Montserrat;
     color: #F1F1F1F1;
 }
 
 .path {
     min-width: 50%;
-    font: normal normal normal 13px/20px Poppins;
+    font: normal normal normal 13px/20px Montserrat;
     border-radius: 18px;
     padding: 8px 16px;
     margin: 0 40px;
@@ -302,7 +302,7 @@
 }
 
 .path-button {
-    font: normal normal bold 13px/20px Poppins;
+    font: normal normal bold 13px/20px Montserrat;
     border-radius: 18px;
     padding: 8px 30px;
     background-color: #00bd7a;
@@ -318,7 +318,7 @@
 }
 
 .path-button-reset {
-    font: normal normal bold 13px/20px Poppins;
+    font: normal normal bold 13px/20px Montserrat;
     border-radius: 18px;
     padding: 8px 30px;
     background-color: #00bd7a;
@@ -340,7 +340,7 @@
 
 .args-settings {
     min-width: 50%;
-    font: normal normal normal 13px/20px Poppins;
+    font: normal normal normal 13px/20px Montserrat;
     border-radius: 18px;
     padding: 8px 16px;
     margin: 0 40px;
@@ -422,7 +422,7 @@
 .select {
     border-radius: 40px;
     background-color: #00bd7a;
-    font: normal normal normal 12px/18px Poppins;
+    font: normal normal normal 12px/18px Montserrat;
     transition: color .2s, box-shadow .2s;
     border: none;
     outline: none;
