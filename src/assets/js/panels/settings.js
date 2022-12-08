@@ -66,8 +66,8 @@ class Settings {
         let totalMem = Math.trunc(os.totalmem() / 1073741824 * 10) / 10;
         let freeMem = Math.trunc(os.freemem() / 1073741824 * 10) / 10;
 
-        document.getElementById("total-ram").textContent = `${totalMem} Go`;
-        document.getElementById("free-ram").textContent = `${freeMem} Go`;
+        document.getElementById("total-ram").textContent = `${totalMem} ГБ`;
+        document.getElementById("free-ram").textContent = `${freeMem} ГБ`;
 
         let sliderDiv = document.querySelector(".memory-slider");
         sliderDiv.setAttribute("max", Math.trunc((80 * totalMem) / 100));
@@ -78,12 +78,12 @@ class Settings {
         let minSpan = document.querySelector(".slider-touch-left span");
         let maxSpan = document.querySelector(".slider-touch-right span");
 
-        minSpan.setAttribute("value", `${ram.ramMin} Go`);
-        maxSpan.setAttribute("value", `${ram.ramMax} Go`);
+        minSpan.setAttribute("value", `${ram.ramMin} ГБ`);
+        maxSpan.setAttribute("value", `${ram.ramMax} ГБ`);
 
         slider.on("change", (min, max) => {
-            minSpan.setAttribute("value", `${min} Go`);
-            maxSpan.setAttribute("value", `${max} Go`);
+            minSpan.setAttribute("value", `${min} ГБ`);
+            maxSpan.setAttribute("value", `${max} ГБ`);
             this.database.update({ uuid: "1234", ramMin: `${min}`, ramMax: `${max}` }, 'ram')
         });
     }
