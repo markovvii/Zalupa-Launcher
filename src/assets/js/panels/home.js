@@ -8,6 +8,7 @@
 import { logger, database, changePanel } from '../utils.js';
 
 const { Launch, Status } = require('minecraft-java-core');
+const mc_status = require("minecraft-server-util")
 const { ipcRenderer } = require('electron');
 const launch = new Launch();
 const pkg = require('../package.json');
@@ -180,13 +181,13 @@ class Home {
         let serverMs = document.querySelector('.server-text .desc');
         let playersConnected = document.querySelector('.etat-text .text');
         let online = document.querySelector(".etat-text .online");
-        let serverPing = await new Status(this.config.status.ip, this.config.status.port).getStatus();
+        let serverPing = await new mc_status.status(this.config.status.ip, this.config.status.port);
 
         if (!serverPing.error) {
             nameServer.textContent = this.config.status.nameServer;
-            serverMs.innerHTML = `<span class="green">Онлайн</span> - ${serverPing.ms}ms`;
+            serverMs.innerHTML = `<span class="green">Мы в сети!</span>`;
             online.classList.toggle("off");
-            playersConnected.textContent = serverPing.playersConnect;
+            playersConnected.textContent = serverPing.players.online;
         } else if (serverPing.error) {
             nameServer.textContent = 'Сервер недоступен';
             serverMs.innerHTML = `<span class="red">Оффлайн</span>`;
