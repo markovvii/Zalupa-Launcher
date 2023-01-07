@@ -35,6 +35,8 @@
     text-align: center;
     height: 50px;
     border: none;
+    background: #772ce8;
+    color: #F1F1F1;
     border-radius: 15px;
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
 }
@@ -45,7 +47,7 @@
 }
 
 .icon-settings:before {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .play-element {
