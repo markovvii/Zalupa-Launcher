@@ -1,11 +1,11 @@
 {
     "name": "Zalupa-Launcher",
     "preductname": "Zalupa Launcher",
-    "version": "2.2.6",
+    "version": "2.2.7",
     "description": "Лаунчер для самых ленивых",
     "main": "src/app.js",
     "author": "markovvii",
-    "url": "http://launcher.esme.team",
+    "url": "https://launcher.esme.team",
     "engines": {
         "node": "^18.x.x"
     },
