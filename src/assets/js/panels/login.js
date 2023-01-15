@@ -127,7 +127,7 @@ class Login {
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Введите адрес электронной почты / имя пользователя"
+                infoLogin.innerHTML = "Введите ник (латиница, от 3 до 16 символов)"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -215,7 +215,7 @@ class Login {
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Введите адрес электронной почты / имя пользователя"
+                infoLogin.innerHTML = "Введите ник (латиница, от 3 до 16 символов)"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
