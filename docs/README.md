@@ -15,9 +15,9 @@
 - Linux
 - MacOS
 
-Если вы загружаете из Github Releases, то выберете файл для вашей платформы
+Если вы загружаете лаунчер из Github Releases, то выберете файл для вашей операционной системы
 
- Платформа | Файл |
+ OS | Файл |
 | -------- | ---- |
 | Windows x64 | `Zalupa-Launcher-win-x64.exe ` |
 | macOS x64 | `Zalupa-Launcher-mac-x64.dmg` |
