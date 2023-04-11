@@ -1,7 +1,7 @@
 {
     "name": "Zalupa-Launcher",
     "preductname": "Zalupa Legacy",
-    "version": "2.3.4",
+    "version": "2.3.5",
     "description": "Лаунчер для самых ленивых",
     "main": "src/app.js",
     "author": "markovvii",

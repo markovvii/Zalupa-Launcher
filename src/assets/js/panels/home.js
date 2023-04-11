@@ -25,6 +25,7 @@ class Home {
         this.initLaunch();
         this.initStatusServer();
         this.initBtn();
+        this.initSocialMedia();
     }
 
     async initNews() {
@@ -215,6 +216,59 @@ class Home {
             nameServer.textContent = 'Сервер недоступен';
             serverMs.innerHTML = `<span class="red">Оффлайн</span>`;
         }
+    }
+
+    async initSocialMedia() {
+        let ZlpYoutube = document.querySelector('.social-zlpyoutube');
+        let ZlpTwitch = document.querySelector('.social-zlptwitch');
+        let ZlpTelegram = document.querySelector('.social-zlptelegram');
+        let ZlpWeb = document.querySelector('.social-zlpweb');
+        let ZlpSupport = document.querySelector('.social-zlpsupport');
+        let EsmeYoutube = document.querySelector('.social-esmeyoutube');
+        let EsmeDiscord = document.querySelector('.social-esmediscord');
+        let EsmeTelegram = document.querySelector('.social-esmetelegram');
+        let EsmeWeb = document.querySelector('.social-esmeweb');
+        let EsmeSupport = document.querySelector('.social-esmesupport');
+
+        ZlpYoutube.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.zlpyoutube);
+        });
+
+        ZlpTwitch.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.zlptwitch);
+        });
+
+        ZlpTelegram.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.zlptelegram);
+        });
+
+        ZlpWeb.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.zlpweb);
+        });
+
+        ZlpSupport.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.zlpsupport);
+        });
+
+        EsmeYoutube.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.esmeyoutube);
+        });
+
+        EsmeDiscord.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.esmediscord);
+        });
+
+        EsmeTelegram.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.esmetelegram);
+        });
+
+        EsmeWeb.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.esmeweb);
+        });
+
+        EsmeSupport.addEventListener('click', () => {
+            require('electron').shell.openExternal(this.config.social.esmesupport);
+        });
     }
 
     initBtn() {
