@@ -1,7 +1,7 @@
 {
     "name": "Zalupa-Launcher",
     "preductname": "Zalupa Legacy",
-    "version": "2.3.5",
+    "version": "2.3.6",
     "description": "Лаунчер для самых ленивых",
     "main": "src/app.js",
     "author": "markovvii",
@@ -20,7 +20,7 @@
     },
     "dependencies": {
         "electron-updater": "^5.0.1",
-        "minecraft-java-core": "^3.3.0",
+        "minecraft-java-core": "^3.4.3",
         "minecraft-server-util": "^5.3.1",
         "node-fetch": "^2.6.7"
     },
